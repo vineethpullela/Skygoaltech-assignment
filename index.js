@@ -6,7 +6,7 @@ const path=require("path")
 const bcrypt =require("bcrypt");
 const jwt =require("jsonwebtoken");
 
-
+/// server port number
 let port = 4000;
 
 app.use(express.json());
