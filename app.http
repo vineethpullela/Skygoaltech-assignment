@@ -1,0 +1,31 @@
+###
+
+POST http://localhost:4000/register/ 
+Content-Type: application/json
+
+{
+    "name": "master",
+    "username": "master123",
+    "password": "master@123",
+    "gender": "Male",
+    "location": "Amalapuram"
+}
+
+###
+
+POST http://localhost:4000/login/
+Content-Type: application/json
+
+{
+    "username": "master123",
+    "password": "master@123"
+}
+
+###
+GET http://localhost:4000/users/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hc3RlcjEyMyIsImlhdCI6MTcxNjU4NjMxMX0.uw0AwuPtOHYYYE5YQzeJlM_YTL_DX_dB1y85y5jrLOk
+
+###
+
+GET http://localhost:4000/profile/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hc3RlcjEyMyIsImlhdCI6MTcxNjU4NjMxMX0.uw0AwuPtOHYYYE5YQzeJlM_YTL_DX_dB1y85y5jrLOk
